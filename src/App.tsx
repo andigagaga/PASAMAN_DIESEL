@@ -1,18 +1,20 @@
-import React, { useState, useMemo, useEffect } from 'react';
 import {
-  BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer
-} from 'recharts';
-import {
-  LayoutDashboard, Database, ShoppingCart, FileText, Plus, Search, Download,
-  Printer, LogOut, User, Trash2, CheckCircle, XCircle, AlertCircle, Lock, Eye, EyeOff
+  CheckCircle,
+  Database,
+  FileText,
+  LayoutDashboard,
+  LogOut,
+  ShoppingCart,
+  User
 } from 'lucide-react';
+import { useState } from 'react';
 import { initialProducts, initialTransactions, type CartItem, type Product, type Transaction } from './models/types';
-import { LoginView } from './views/LoginView';
+import { generateId } from './utils';
 import { DashboardView } from './views/DashboardView';
-import { MasterDataView } from './views/MasterDataView';
 import { KasirPOSView } from './views/KasirPOSView';
 import { LaporanView } from './views/LaporanView';
-import { generateId } from './utils';
+import { LoginView } from './views/LoginView';
+import { MasterDataView } from './views/MasterDataView';
 
 export default function App() {
   // --- States ---

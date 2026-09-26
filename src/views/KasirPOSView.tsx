@@ -1,7 +1,7 @@
+import { Plus, Printer, ShoppingCart, Trash2, XCircle } from "lucide-react";
 import { useState } from "react";
 import type { CartItem, Product, Transaction } from "../models/types";
 import { formatIDR } from "../utils";
-import { Plus, Printer, ShoppingCart, Trash2, XCircle } from "lucide-react";
 
 export const KasirPOSView = ({ products, onCheckout, onToast }: { products: Product[], onCheckout: (cart: CartItem[], total: number) => Transaction | null, onToast: (m: string) => void }) => {
   const [cart, setCart] = useState<CartItem[]>([]);

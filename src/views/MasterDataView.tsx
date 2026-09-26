@@ -1,7 +1,7 @@
+import { CheckCircle, Download, Plus, Search, XCircle } from "lucide-react";
 import { useMemo, useState } from "react";
 import type { Product } from "../models/types";
 import { formatIDR, generateId } from "../utils";
-import { CheckCircle, Download, Plus, Search, XCircle } from "lucide-react";
 
 export const MasterDataView = ({ products, onAddProduct, onToast }: { products: Product[], onAddProduct: (p: Product) => void, onToast: (m: string) => void }) => {
   const [searchTerm, setSearchTerm] = useState('');
