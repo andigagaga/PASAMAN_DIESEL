@@ -42,7 +42,7 @@ export const DashboardView = ({ products, transactions }: { products: Product[],
             <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#E5E7EB" />
             <XAxis dataKey="name" axisLine={false} tickLine={false} />
             <YAxis axisLine={false} tickLine={false} tickFormatter={(v) => `Rp ${v / 1000000}M`} />
-            <Tooltip formatter={(value: number) => formatIDR(value)} cursor={{ fill: 'transparent' }} />
+            <Tooltip formatter={(value: any) => formatIDR(value)} cursor={{ fill: 'transparent' }} />
             <Legend iconType="circle" wrapperStyle={{ paddingTop: '20px' }} />
             <Bar dataKey="ValuasiStok" name="Valuasi Stok Tersedia" fill="#3B82F6" radius={[4, 4, 0, 0]} maxBarSize={60} />
             <Bar dataKey="Pendapatan" name="Total Pendapatan" fill="#10B981" radius={[4, 4, 0, 0]} maxBarSize={60} />
